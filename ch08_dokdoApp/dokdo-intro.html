@@ -1,0 +1,120 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>한복 소개 앱</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="logo.jpg" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">한복 소개</a></li>
+				<li><a href="#movie" data-rel="dialog">한복 영상</a></li>
+				<li><a href="#wizard3-1" data-rel="dialog">아리랑 음악</a></li>
+				<li><a href="#gallery">한복 사진</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>한복소개_김남륜</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>한복 소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="logo.jpg">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>한복이란?</h3>
+					<p>한복(한국 한자: 韓服, 문화어: 조선옷)은 고대시대부터 전해 내려오는 대한민국의 고유한 의복이다.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>한복의 구성</h3>
+					<p>일반적으로 옷에는 속옷부터 바지와 치마 등을 포함하는 아래옷, 윗도리나 남방을 가리키는 윗옷 등 그 쓰임새와 입는때에 따라 구분지어져있다. 한복에도 두루마기, 포, 바지, 마고자 등 착용 시 가장 기본부터 입는 옷부터 맨위에 걸치는 두루마기에 이르기까지 다양한 종류가 존재하며 이들 중 가장 기본적인 요소를 구성하는 한복에 대해 다룬다.</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>한복의 역사</h3>
+					<p>한복의 시초는 삼국시대 한반도사람들의 복식에서 그 뿌리를 찾을 수 있다. 21세기에 이르기까지 기본적인 한복의 골격인 저고리, 바지, 치마라는 기본구조는 그대로 이어지되 길이나 폭, 형태 등이 시대의 흐름에 따라 조금씩 변화하였다. 폭에 관해서는 넓은 바지, 좁은바지, 발목에 주름잡혀 좁은발목형태의 바지, 넓게 펼쳐진 밑단의 바지 등 폭과 길이가 다채로웠으며 허리 정도의 길이에 오는 저고리는 삼국시대까지만 해도 남녀 구분 없이 입었다.</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>한복소개_김남륜</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>한복 영상</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-a">코리아인 패션 한복 동영상</div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/watch?v=LHm0bqMI0e0"></iframe></li><br/>
+			<div class="ui-bar ui-bar-a">한복 홍보 동영상</div><br/>
+			<li><video controls width="100%" preload="metadata">
+				<source src="hanbok.mp4" type="video/mp4">
+			</video></li>
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+	
+	<div data-role="page" id="wizard3-1">
+		<div data-role="header">
+			<h1>아리랑 노래</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">홀로 아리랑</div><br/>
+			<audio controls width="100%" preload="metadata">
+				<source src="arirangalone.mp3" type="audio/mp3">
+			</audio>	
+			<img src="3-1.jpg" alt="" width="100%">
+		</div>
+	</div>
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>한복 갤러리</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="1.jpg" rel="external"><img src="1.jpg" /></a></li>	
+				<li><a href="2.jpg" rel="external"><img src="2.jpg" /></a></li>	
+				<li><a href="3.jpg" rel="external"><img src="3.jpg" /></a></li>	
+				<li><a href="4.jpg" rel="external"><img src="4.jpg" /></a></li>	
+				<li><a href="5.jpg" rel="external"><img src="5.jpg" /></a></li>	
+				<li><a href="6.jpg" rel="external"><img src="6.jpg" /></a></li>	
+				<li><a href="7.jpg" rel="external"><img src="7.jpg" /></a></li>	
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>한복소개_김남륜</h1>
+		</div>		
+	</div>
+</div>	
+</body>
+</html>
