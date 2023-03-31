@@ -15,7 +15,7 @@
 
 패션한복 영상, 한복의 홍보영상
 
-![3](https://user-images.githubusercontent.com/76992600/229038047-a86a1cb9-2f43-4549-9cf4-f9436c1d5217.png)
+![4](https://user-images.githubusercontent.com/76992600/229038055-4263399c-758b-4243-94d5-efea56f3821a.png)
 
 
 
@@ -25,10 +25,8 @@
 
 
 
-한복 이미지 모음 갤러
-
-![4](https://user-images.githubusercontent.com/76992600/229038055-4263399c-758b-4243-94d5-efea56f3821a.png)
+한복 이미지 모음 갤러리
 
 
-
+![3](https://user-images.githubusercontent.com/76992600/229038047-a86a1cb9-2f43-4549-9cf4-f9436c1d5217.png)
 
